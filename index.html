@@ -7,24 +7,70 @@
     <link rel="stylesheet" href="style.css">
     <title>SCUBA Buddies | Sign-up</title>
 </head>
+
 <body>
     <div class="left">
         <div class="banner one">
             <img src="assets/diving.png" alt="logo" class="logo">
             <h2>SCUBA Buddies</h2>
         </div>
+        <p class="dark small">Photo by <a class="dark" href="https://unsplash.com/@tales_of_light?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Frans Daniels</a> on <a class="dark" href="https://unsplash.com/photos/man-in-black-and-white-suit-riding-motorcycle-AY1UVjZCI4Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
     </div>
     <div class="right">
-        <content>
-            <div class="banner two">
-            <p class="info-main"><span>Dive</span> into adventure</p>
+
+            <div class="banner">
+                <p class="info-main"><span>Dive</span> into adventure</p>
+            </div>
+            <div class="sign-up">
+
+                <p class="info">Explore the <span>wonders</span> beneath the <span>waves</span>,<br> make new friends, and create unforgettable <span>memories</span>.</p>
+                <p class="info">Join our <span>SCUBA club</span> now!</p>
+         
+            <form action="" method = "post">
+                <div class="formleft">
+                    <ul>
+                        <li>
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstname" name="firstname" required/>
+                        </li>
+                        <li>
+                            <label for="mail">EMAIL</label>
+                            <input type="email" id="mail" name="mail" required/>
+                        </li>
+                        <li>
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" name="pwd" required/>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="formright">
+                    <ul>
+                        <li>
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname" name="lastname"/>
+                        </li>
+                        <li>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone"/>
+                        </li>
+                        <li>
+                            <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="pwd-confirm" name="pwd-confirm" required/>
+                        </li>
+                    </ul>
+                </div>
+
+            </form>
+            
+            <button type="submit">Create Account</button>
+            <p class="info small">Already have an account? <span class="login">Log in</span></p>
+            <p class="info"><a href="https://oceana.org/">Click here to find out more about your local oceans</a></p>
+            
         </div>
-            <p class="info">Explore the <span>wonders</span> beneath the <span>waves</span>,<br> make new friends, and create unforgettable <span>memories</span>.</p>
-            <p class="info">Join our <span>SCUBA club</span> now!</p>
-        </content>
+
     </div>
+
 
 </body>
 </html>
-
-<!-- include link to https://oceana.org/ to learn about your local oceans -->

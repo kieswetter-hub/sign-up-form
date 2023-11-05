@@ -1,27 +1,24 @@
-/*  
-shark: #1D2023;
-fountain blue: #55C2C3
-blue ribbon: #0443f2
-malibu: #53CBFB
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-#from image #2389be
-*/
-
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Rubik+Vinyl&display=swap');
-
- */
-
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-
+:root {
+    --text: #e3dfde;
+    --bg:  #1D2023;
+    --accent: #55C2C3;
+    --transparent: rgba(255, 255, 255, 0.6);
+}
 
 body {
     margin: 0;
-    background-color: #1D2023;
+    background-color: var(--bg);
     font-family: 'poppins', sans-serif;
     display: flex;
 }
 
- /* right side of page */
+a {
+    text-decoration: none;
+}
+
+ /* left side of page */
 
  .left {
     background: url(assets/scuba-scooter.jpg);
@@ -31,7 +28,6 @@ body {
     width: 40%;
     position: absolute;
     height: 100%;
-
  }
 
  .banner {
@@ -42,8 +38,8 @@ body {
     justify-content: center;
  }
 
-.one {
-    background-color: #e3dfde63;
+.one, p.dark {
+    background-color: var(--transparent);
  }
 
  img {
@@ -53,10 +49,16 @@ body {
  }
 
  h2 {
-    color: #1D2023;
+    color: var(--bg);;
     font-size: 5vh;
  }
 
+.dark {
+    color:var(--bg);;
+    text-align: center;
+    height: 3vh;
+    margin-top: 80vh;
+}
 
  /* right side of page */
 
@@ -65,36 +67,95 @@ body {
     position: absolute;
     right: 0;
     height: 100%;
+    display: flex;
+    flex-direction: column;
  }
 
- .two {
-    justify-content: left;
-
- }
-
- p {
-    color:
-    #e3dfde;
+ .sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* .information {
-    padding: 4rem 5rem;
- }
- */
- .info, .info-main {
+ /* text parts */
+
+ p, a, label, input:focus {
+    color: var(--text)
+}
+
+ .info, .info-main, button{
     word-spacing: 0.1rem;
-    margin-top: 5vh;
     margin-left: 5vh;
+    text-align: center;
+    font-size: 2.5vh;
 }
 
 .info-main {
     font-size: 6vh;
 }
 
-.info {
+span {
+    color: var(--accent);
+ }
+
+/* form section */
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ ul {
+    list-style: none;
+ }
+
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding-top: 2vh;    
+    font-size: 2vh;
+
+}
+
+input {
     font-size: 2.5vh;
 }
 
-span {
-    color: #55C2C3;
- }
+/* button */
+
+button {
+    background-color: var(--text);
+    color: #1D2023;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: 3px solid var(--bg);
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+
+}
+
+button:hover {
+    background-color: var(--accent);
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+.small {
+    font-size: 2vh;
+}
+
+.login {
+    color: var(--accent)
+}
+
+.login:hover {
+    color: var(--accent);
+    cursor: pointer;
+}
