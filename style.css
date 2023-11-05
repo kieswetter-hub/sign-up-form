@@ -4,6 +4,7 @@
     --text: #e3dfde;
     --bg:  #1D2023;
     --accent: #55C2C3;
+    --accent2: #d17b0a;
     --transparent: rgba(255, 255, 255, 0.6);
 }
 
@@ -102,7 +103,20 @@ span {
 
 form {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-fillin {
+    display: flex;
+}
+
+.formright, .formleft {
+    display: flex;
+    justify-content: center;
 }
 
  ul {
@@ -118,11 +132,20 @@ li {
 label {
     padding-top: 2vh;    
     font-size: 2vh;
+}
 
+label:focus-within {
+    color: var(--accent2);
 }
 
 input {
     font-size: 2.5vh;
+}
+
+input:focus{
+    outline: none;
+    border: 2.5px solid var(--accent2);
+    color: var(--bg);
 }
 
 /* button */
@@ -143,6 +166,12 @@ button:hover {
     cursor: pointer;
 }
 
+button:active {
+    background-color: var(--bg);
+    border: 3px solid var(--accent);
+    color: var(--accent)
+}
+
 a:hover {
     color: var(--accent);
 }
@@ -152,10 +181,6 @@ a:hover {
 }
 
 .login {
-    color: var(--accent)
-}
-
-.login:hover {
     color: var(--accent);
     cursor: pointer;
 }
