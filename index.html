@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>SCUBA Buddies | Sign-up</title>
 </head>
-
 <body>
+<div class="container">
     <div class="left">
         <div class="banner one">
             <img src="assets/diving.png" alt="logo" class="logo">
@@ -16,65 +16,63 @@
         </div>
         <p class="dark small">Photo by <a class="dark" href="https://unsplash.com/@tales_of_light?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Frans Daniels</a> on <a class="dark" href="https://unsplash.com/photos/man-in-black-and-white-suit-riding-motorcycle-AY1UVjZCI4Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
     </div>
+
     <div class="right">
-
-            <div class="banner">
-                <p class="info-main">Dive into adventure</p>
-            </div>
-            <div class="sign-up">
-
-                <p class="info"><span>Explore</span> the wonders beneath the <span>waves</span>,<br> make new friends, and  <span>create</span> unforgettable <span>memories</span>.</p>
-                <p class="info">Join our <span>SCUBA</span> club now!</p>
-         
+        <div class="banner">
+            <p class="info-main">Dive into adventure</p>
+        </div>
+        <div class="sign-up">
+            <p class="info"><span>Explore</span> the wonders beneath the <span>waves</span>,<br> make new friends, and <span>create</span> unforgettable <span>memories</span>.</p>
+            <p class="info">Join our <span>SCUBA</span> club now!</p>
             <form action="" method = "post">
                 <div class="form-fillin">
-                <div class="formleft">
-                    <ul>
-                        <li>
-                            <label for="firstname">FIRST NAME<br>
-                            <input type="text" id="firstname" name="firstname"></label>
-                            
-                        </li>
-                        <li>
-                            <label for="mail">EMAIL *<br>
-                            <input type="email" id="mail" name="mail" required></label>
-                        </li>
-                        <li>
-                            <label for="pwd">PASSWORD *<br>
-                            <input type="password" id="pwd" name="pwd" required></label>
-                        </li>
-                    </ul>
+                    <div class="formleft">
+                        <ul>
+                            <li>
+                                <label for="firstname">FIRST NAME<br>
+                                    <input type="text" id="firstname" name="firstname">
+                                </label>
+                            </li>
+                            <li>
+                                <label for="mail">EMAIL *<br>
+                                    <input type="email" id="mail" name="mail" required>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="pwd">PASSWORD *<br>
+                                    <input type="password" id="pwd" name="pwd" required>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="formright">
+                        <ul>
+                            <li>
+                                <label for="lastname">LAST NAME<br>
+                                    <input type="text" id="lastname" name="lastname"/>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="phone">PHONE NUMBER<br>
+                                    <input type="tel" id="phone" name="phone"/>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="pwd-confirm">CONFIRM PASSWORD *<br>
+                                    <input type="password" id="pwd-confirm" name="pwd-confirm" required/>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="formright">
-                    <ul>
-                        <li>
-                            <label for="lastname">LAST NAME<br>
-                            <input type="text" id="lastname" name="lastname"/></label>
-                        </li>
-                        <li>
-                            <label for="phone">PHONE NUMBER<br>
-                            <input type="tel" id="phone" name="phone"/></label>
-                        </li>
-                        <li>
-                            <label for="pwd-confirm">CONFIRM PASSWORD *<br>
-                            <input type="password" id="pwd-confirm" name="pwd-confirm" required/></label>
-                        </li>
-                    </ul>
+                <div class="form-button">
+                    <button type="submit">Create Account</button>
                 </div>
-            </div>
-            <div class="form-button">
-                <button type="submit">Create Account</button>
-            </div>
-
-        </form>
+            </form>
             <p class="info small">Already have an account? <span class="login">Log in</span></p>
-            <p class="info"><a href="https://oceana.org/">Click here to find out more about your local oceans</a></p>
-            
+            <p class="info"><a href="https://oceana.org/">Click here to find out more about your local oceans</a></p>           
         </div>
-
     </div>
-
-
+</div>
 </body>
 </html>

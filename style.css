@@ -45,13 +45,13 @@ a {
 
  img {
     height: 10vh;
-    opacity: 1;
     padding-right: 2vh;
  }
 
  h2 {
     color: var(--bg);;
     font-size: 5vh;
+    word-spacing: 0.1rem;
  }
 
 .dark {
@@ -70,7 +70,7 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
- }
+}
 
  .sign-up {
     display: flex;
@@ -78,13 +78,13 @@ a {
     align-items: center;
 }
 
- /* text parts */
+ /* text above the form section */
 
  p, a, label, input:focus {
     color: var(--text)
 }
 
- .info, .info-main, button{
+.info, .info-main, button{
     word-spacing: 0.1rem;
     margin-left: 5vh;
     text-align: center;
@@ -104,14 +104,14 @@ span {
 form {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 .form-fillin {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .formright, .formleft {
@@ -122,7 +122,6 @@ form {
  ul {
     list-style: none;
  }
-
 
 li {
     display: flex;
@@ -144,7 +143,7 @@ input {
 
 input:focus{
     outline: none;
-    border: 2.5px solid var(--accent2);
+    border: 0.15rem solid var(--accent2);
     color: var(--bg);
 }
 
@@ -153,12 +152,11 @@ input:focus{
 button {
     background-color: var(--text);
     color: #1D2023;
-    padding: 10px 30px;
-    border-radius: 3px;
-    border: 3px solid var(--bg);
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.15rem;
+    border: 0.15rem solid var(--bg);
     margin-top: 2vh;
     margin-bottom: 0vh;
-
 }
 
 button:hover {
@@ -168,9 +166,11 @@ button:hover {
 
 button:active {
     background-color: var(--bg);
-    border: 3px solid var(--accent);
+    border: 0.15rem solid var(--accent);
     color: var(--accent)
 }
+
+/* sections under the form */
 
 a:hover {
     color: var(--accent);
